@@ -1,5 +1,4 @@
-# AI-Generated Simple Playwrite Test Suite
-
+# CoPilot-Only AI-Generated Simple Playwrite Test Suite
 
 ## Overview:
 This suite is a simple Playwright test suite example that was used to examine whether an entire test framework and test suite could be generated using GitHub CoPilot.  It was a simple experiment to determine where an AI LLM could be used for efficiency gains versus coding the tests directly.  In this example the Playwright MCP agents were not used.  
