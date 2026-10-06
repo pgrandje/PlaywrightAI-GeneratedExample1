@@ -1,9 +1,6 @@
-import { test } from '@playwright/test';
-import { NaturePage } from '../page-objects/NaturePage';
+import { test } from '../fixtures/baseTest';
 
-test('Nature page displays photo images', async ({ page }) => {
-  const naturePage = new NaturePage(page);
-
+test('Nature page displays photo images', async ({ naturePage }) => {
   await naturePage.goto();
   await naturePage.waitForLoaded();
   await naturePage.verifyHeader();

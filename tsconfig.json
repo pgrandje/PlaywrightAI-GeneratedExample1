@@ -13,6 +13,7 @@
     "playwright.config.ts",
     "tests/**/*.ts",
     "page-objects/**/*.ts",
+    "fixtures/**/*.ts",
     "utils/**/*.ts",
     "utils/**/*.d.ts"
   ]

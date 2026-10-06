@@ -1,16 +1,12 @@
-import { test } from '@playwright/test';
-import { SubscribePage } from '../page-objects/SubscribePage';
+import { test } from '../fixtures/baseTest';
 
-test('Subscribe page loads and displays its header', async ({ page }) => {
-  const subscribePage = new SubscribePage(page);
-
+test('Subscribe page loads and displays its header', async ({ subscribePage }) => {
   await subscribePage.goto();
   await subscribePage.waitForLoaded();
   await subscribePage.verifyHeader();
 });
 
-test('User subscribes with email address', async ({ page }) => {
-  const subscribePage = new SubscribePage(page);
+test('User subscribes with email address', async ({ subscribePage }) => {
   const name = 'Playwright Test User';
   const email = 'playwright-test@example.com';
   const comment = 'Testing the subscription form.';

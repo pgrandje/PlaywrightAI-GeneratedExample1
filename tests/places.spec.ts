@@ -1,9 +1,6 @@
-import { test } from '@playwright/test';
-import { PlacesPage } from '../page-objects/PlacesPage';
+import { test } from '../fixtures/baseTest';
 
-test('Places page displays photo images', async ({ page }) => {
-  const placesPage = new PlacesPage(page);
-
+test('Places page displays photo images', async ({ placesPage }) => {
   await placesPage.goto();
   await placesPage.waitForLoaded();
   await placesPage.verifyHeader();

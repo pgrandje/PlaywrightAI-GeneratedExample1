@@ -1,9 +1,6 @@
-import { test } from '@playwright/test';
-import { AboutPage } from '../page-objects/AboutPage';
+import { test } from '../fixtures/baseTest';
 
-test('About page displays its content', async ({ page }) => {
-  const aboutPage = new AboutPage(page);
-
+test('About page displays its content', async ({ aboutPage }) => {
   await aboutPage.goto();
   await aboutPage.waitForLoaded();
   await aboutPage.verifyHeader();

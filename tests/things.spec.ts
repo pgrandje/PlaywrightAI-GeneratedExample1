@@ -1,9 +1,6 @@
-import { test } from '@playwright/test';
-import { ThingsPage } from '../page-objects/ThingsPage';
+import { test } from '../fixtures/baseTest';
 
-test('Things page displays photo images', async ({ page }) => {
-  const thingsPage = new ThingsPage(page);
-
+test('Things page displays photo images', async ({ thingsPage }) => {
   await thingsPage.goto();
   await thingsPage.waitForLoaded();
   await thingsPage.verifyHeader();
