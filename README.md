@@ -39,6 +39,9 @@ Severy very explicit prompts were required.  For example,
 - Fix the Locators to match a standards I was expecting
 - Fix some errors flagged by the editor
 
+## Chat History
+The `chat-history/` folder in this project contains saved conversations as a reference for reviewing the steps and instructions given to CoPilot while writing the tests with best practices in mind.
+
 ## Conclusion
 Essentially, I had to tell it everything; to the point where it probably didn't save much time had I coded the tests and page objects directly.
 
